@@ -26,7 +26,7 @@ function webpackMultipleEntries(config) {
   const defaultEntryHTMLPlugin = config.plugins.filter((plugin) => {
     return plugin.constructor.name === 'HtmlWebpackPlugin';
   })[0];
-  defaultEntryHTMLPlugin.options.chunks = [defaultEntryName];
+  defaultEntryHTMLPlugin.userOptions.chunks = [defaultEntryName];
 
   // config.entry is not an array in Create React App 4
   if (!Array.isArray(config.entry)) {
@@ -46,7 +46,7 @@ function webpackMultipleEntries(config) {
     // Multiple Entry HTML Plugin
     config.plugins.unshift(
       new defaultEntryHTMLPlugin.constructor(
-        Object.assign({}, defaultEntryHTMLPlugin.options, {
+        Object.assign({}, defaultEntryHTMLPlugin.userOptions, {
           filename: entry.outPath,
           template: entry.template,
           chunks: [entry.name],
