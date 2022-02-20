@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## How to upgrade from CRA 4.x to 5.x
+
+Check this [commit](https://github.com/helsonxiao/cra-multi-entry-demo/commit/811cd410b9719123c48b6f3c285a303775a66d09)!
+
 ## Available Pages
 
 1. `/`
