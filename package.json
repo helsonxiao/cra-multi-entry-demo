@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.4.3",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
     "@testing-library/user-event": "^13.5.0",
@@ -21,7 +22,9 @@
   "devDependencies": {},
   "scripts": {
     "start": "react-app-rewired start",
+    "start:craco": "craco start",
     "build": "react-app-rewired build",
+    "build:craco": "craco build",
     "test": "react-app-rewired test"
   },
   "eslintConfig": {
